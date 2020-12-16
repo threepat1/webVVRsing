@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="XR Singapore Company">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+
+    <title>XR Singapore</title>
+
+</head>
+<body>
+    <header class="flex full-width-div">
+        <div class="full-video-wrap">
+
+            <video autoplay muted loop id="myVideo">
+                <source src="video/energy.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+        </div>
+        <div class="header-overlay"></div>
+        <div class="flex header-content text-center full-text-center">
+            <img src="image/XR-logo.png" class="rounded" style="height:150px;"><br />
+            <img src="image/VRARMR.png" class="rounded" style="width:70%"><br />
+            <br />
+            <br />
+            <div class="pt-4"><a href="#portfolio" class="btn"> <img src="image/animated_arrow.png" style="width:30px" /></a></div>
+        </div>
+
+    </header>
+
+    <script>
+        $(document.main).on('DOMMouseScroll mousewheel', function (e) {
+            if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+                dir = 'down';
+            } else {
+                dir = 'up';
+            }
+            // find currently visible div :
+            div = -1;
+            divs.each(function (i) {
+                if (div < 0 && ($(this).offset().top >= $(window).scrollTop())) {
+                    div = i;
+                }
+            });
+            if (dir == 'up' && div > 0) {
+                div--;
+            }
+            if (dir == 'down' && div < divs.length - 1) {
+                div++;
+            }
+            //console.log(div, dir, divs.length);
+            $('html,body').stop().animate({
+                scrollTop: divs.eq(div).offset().top
+            }, 200);
+            return false;
+        });
+
+        const webpack = require('webpack');
+
+
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid sticky-top" style="background-color:#000000">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="dual">
+            <div class="navbar-nav ml-auto text-center px-2 navmouse">
+                <a class="nav-link px-3" href="AboutUs.html">ABOUT US</a>
+                <a class="nav-link px-3" href="Latest.html">LATEST NEWS</a>
+            </div>
+        </div>
+        <div class="mx-auto my-2 order-0 order-md-1 position-relative text-center">
+            <a class="mx-auto" href="index.html">
+                <img src="image/XR-logo.png" class="rounded" style="height:100px;">
+            </a>
+            <br />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dual" aria-controls="dual" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-2 order-md-2 navmouse" id="dual">
+            <div class="navbar-nav mr-auto text-center px-2">
+                <a class="nav-link px-3" href="casestudies.html">CASE STUDIES</a>
+                <a class="nav-link px-3" href="contactus.html">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="portfolio">
+                <h2 class="mt-5 font-Poppins">OUR PORTFOLIO</h2>
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-2940px, 0px, 0px); transition: all 0.25s ease 0s; width: 4704px;">
+                            <div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>7</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>8</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>9</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>10</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>11</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>12</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>1</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>2</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>3</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>4</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>5</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>6</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>7</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>8</h4>
+                                </div>
+                            </div><div class="owl-item" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>9</h4>
+                                </div>
+                            </div><div class="owl-item active" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>10</h4>
+                                </div>
+                            </div><div class="owl-item active" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>11</h4>
+                                </div>
+                            </div><div class="owl-item active" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>12</h4>
+                                </div>
+                            </div><div class="owl-item cloned active" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>1</h4>
+                                </div>
+                            </div><div class="owl-item cloned active" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>2</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>3</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>4</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>5</h4>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 186px; margin-right: 10px;">
+                                <div class="item">
+                                    <h4>6</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>
+                </div>
+            </div>
+
+            <div id="service">
+                OUR SERVICE
+                <div class="wrap-container">
+                    <div class="wrap-item">1</div>
+                    <div class="wrap-item">2</div>
+                    <div class="wrap-item">3</div>
+                </div>
+            </div>
+            <div id="client">OUR CLIENT</div>
+            <div id="client">CONTACT US</div>
+        </div>
+
+    </main>
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <footer>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+    </footer>
+</body>
+
+
+</html>

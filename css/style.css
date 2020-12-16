@@ -1,0 +1,69 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro&family=Poppins&display=swap');
+.font-Josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-Mavenpro {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+nav {
+    color: #ffffff;
+}
+div{
+    display:block;
+}
+#dual a:hover {
+    color: rgba(139,32,32,.75);
+}
+#dual .active {
+    color: rgba(139,32,32,.75);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+.full-width-div {
+    width: 100%;
+    height: calc(100vh + 53px);
+    overflow:hidden;
+}
+.full-text-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
